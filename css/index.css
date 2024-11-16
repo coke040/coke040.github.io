@@ -908,6 +908,7 @@ body::after {
   z-index: 0;
   width: 100%;
   height: 100%;
+  background: url("/images/preview.jpg") no-repeat center/cover;
 }
 .header-banner-info {
   position: absolute;
@@ -1105,6 +1106,31 @@ body::after {
 .sidebar-ov-author__text {
   margin: 0.5rem 0 0;
   font-weight: 600;
+}
+.sidebar-ov-social {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.sidebar-ov-social-item {
+  display: inline-block;
+  margin: 0.2rem;
+  text-align: center;
+  color: var(--color-gray-100);
+  background-color: #a0daff;
+  border-radius: 0.75rem;
+  padding: 0 0.25rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.sidebar-ov-social-item:hover {
+  color: var(--color-gray-100);
+  background-color: #4dbaff;
 }
 .sidebar-ov-state {
   padding: 0.5rem 0;
@@ -2417,6 +2443,18 @@ body::after {
 .friends-plugin__item-info__intro {
   font-size: 0.9em;
   color: #999;
+}
+.busuanzi-siteuv__icon,
+.busuanzi-sitepv__icon,
+.busuanzi-siteuv__info,
+.busuanzi-sitepv__info,
+.busuanzi-siteuv__value,
+.busuanzi-sitepv__value {
+  margin: 0 2px;
+}
+.busuanzi > span:nth-child(2)::before {
+  content: '|';
+  margin: 0 10px;
 }
 @media (min-width: 1138px) {
   .header-nav-inner {
